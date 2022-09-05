@@ -1,6 +1,6 @@
 app:
     name: awsbluegreenswitch
-    code: awsbluegreenswitch
+    code: Awsbluegreenswitch
     notify: aramanan@ecloudcontrol.com
 
 build:
