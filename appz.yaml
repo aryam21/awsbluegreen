@@ -18,20 +18,20 @@ deploy:
 
 properties:
     AWS_ACCESS_KEY_ID:
-       VAULT:AWS_ACCESS_KEY_ID
+       vault: AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY:
-        VAULT:AWS_SECRET_ACCESS_KEY   
-    AWS_DEFAULT_REGION:AWS_DEFAULT_REGION
-    AWS_MAX_ATTEMPTS:$AWS_MAX_ATTEMPTS
+        vault: AWS_SECRET_ACCESS_KEY   
+    AWS_DEFAULT_REGION: ap-south-1
+    AWS_MAX_ATTEMPTS: 1
     LISTENER_ARN:
-       VAULT:LISTENER_ARN
+       vault: LISTENER_ARN
     RULE_ARN:
-       VAULT:RULE_ARN
+       vault: RULE_ARN
     BLUE_TG_ARN:
-      VAULT:BLUE_TG_ARN
+      vault: BLUE_TG_ARN
     GREEN_TG_ARN:
-      VAULT:GREEN_TG_ARN
-    SWITCH_TO:blue  
+      vault: GREEN_TG_ARN
+    SWITCH_TO: blue  
     revision: 1
     
     
