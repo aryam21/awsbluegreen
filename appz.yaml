@@ -1,0 +1,39 @@
+app:
+    name: awsbluegreenswitch
+    code: awsbluegreenswitch
+    notify: aramanan@ecloudcontrol.com
+
+build:
+    version: 0.2
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: awsbluegreenswitch-0.2
+
+deploy:
+    context: aryam21/DEV
+    replicas: 1
+    port:
+    - 80
+
+properties:
+    AWS_ACCESS_KEY_ID:
+       VAULT:AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY:
+        VAULT:AWS_SECRET_ACCESS_KEY   
+    AWS_DEFAULT_REGION:AWS_DEFAULT_REGION
+    AWS_MAX_ATTEMPTS:$AWS_MAX_ATTEMPTS
+    LISTENER_ARN:
+       VAULT:LISTENER_ARN
+    RULE_ARN:
+       VAULT:RULE_ARN
+    BLUE_TG_ARN:
+      VAULT:BLUE_TG_ARN
+    GREEN_TG_ARN:
+      VAULT:GREEN_TG_ARN
+    SWITCH_TO:blue  
+    revision: 1
+    
+    
+
+ 
