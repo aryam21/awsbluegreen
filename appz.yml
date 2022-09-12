@@ -31,7 +31,7 @@ properties:
       vault: BLUE_TG_ARN
     GREEN_TG_ARN:
       vault: GREEN_TG_ARN
-    SWITCH_TO: blue  
+    SWITCH_TO: green 
     revision: 6
     
     
